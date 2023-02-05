@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route, BrowserRouter} from "react-router-dom"
+import {Routes, Route, BrowserRouter, Navigate} from "react-router-dom"
 import {HomePage} from "../components/HomePage"
 import {Portafolio} from "../components/Portafolio"
 import {Services} from "../components/Services"
@@ -15,17 +15,18 @@ export const MyRoutes = () => {
       <HeaderNav/>
 
     {/* CONTENIDO CENTRAL */}
-    <section className='content'></section>
+    <section className='content'>
     <Routes>
-        <Route path='/' element= {<HomePage/>}>Inicio</Route>
+        <Route path='/' element= {<Navigate to= "/home"/>}>Inicio</Route>
         <Route path='/home' element= {<HomePage/>}>Inicio</Route>
         <Route path='/portafolio' element= {<Portafolio/>}>Portafolio</Route>
         <Route path='/services' element= {<Services/>}>Servicio</Route>
         <Route path='/curriculum' element= {<Curriculum/>}>Curriculum</Route>
         <Route path='/contact' element= {<Contact/>}>Contacto</Route>
-        
-
+  
     </Routes>
+
+    </section>
 
     {/* FOOTER */}
       <Footer/>
