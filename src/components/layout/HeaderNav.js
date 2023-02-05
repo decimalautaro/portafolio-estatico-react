@@ -5,7 +5,7 @@ export const HeaderNav = () => {
   return (
     <header className='header'>
       <div className='logo'>
-        <span>L</span>
+        <span>LD</span>
         <h3>Lautaro Decima</h3>
       </div>
         <nav>

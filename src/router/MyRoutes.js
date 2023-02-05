@@ -15,6 +15,7 @@ export const MyRoutes = () => {
       <HeaderNav/>
 
     {/* CONTENIDO CENTRAL */}
+    <section className='content'></section>
     <Routes>
         <Route path='/' element= {<HomePage/>}>Inicio</Route>
         <Route path='/home' element= {<HomePage/>}>Inicio</Route>
@@ -26,7 +27,6 @@ export const MyRoutes = () => {
 
     </Routes>
 
-      <hr/>
     {/* FOOTER */}
       <Footer/>
    
