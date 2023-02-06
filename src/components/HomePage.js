@@ -18,10 +18,8 @@ export const HomePage = () => {
         <h2 className='heading'>Algunos de mis proyectos</h2>
         <p>Estos son algunos de mis proyectos en desarrollo web</p>
 
-        <ListWork limit="2" />
-
         <div className='works'>
-
+           <ListWork limit="2" />
         </div>
       </section>
     </div>
