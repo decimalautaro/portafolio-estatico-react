@@ -170,7 +170,7 @@ button{
 .home a:hover,
 input[type="submit"]:hover,
 button:hover{
-  background-color: rgb(0, 211, 0);
+  background-color: #6B4AD9;
 }
 
 .works{
@@ -191,17 +191,17 @@ button:hover{
   box-shadow: 0px 5px 10px #ddd;
 }
 
-.workItem .mask:hover img{
-  width: 200%;
-  margin-right: 30%;
-
-}
-
 .workItem img{
   width: 120%;
   transition: all 500ms;
 }
 
+
+.workItem .mask:hover img{
+  width: 200%;
+  margin-right: 30%;
+
+}
 
 
 .workItem span{
@@ -235,4 +235,11 @@ button:hover{
   padding-top: 15px;
   margin-top: 0px;
   border-top: 1px solid #ddd;
+}
+
+.page-work  img{
+  margin-top: 20px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #ddd;
 }
