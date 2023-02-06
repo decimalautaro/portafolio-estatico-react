@@ -3,7 +3,7 @@ import React from 'react'
 export const Curriculum = () => {
   return (
     <div className='page'>
-    <h1>
+    <h1 className='heading'>
       Curriculum Vitae
     </h1>
 
