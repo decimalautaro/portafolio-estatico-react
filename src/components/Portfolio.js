@@ -12,7 +12,7 @@ export const Portfolio = () => {
               return(
                 <article key={work.id} className="workItem">
                   <div className='mask'>
-                      <img src= {require(`./../img/${work.id}.png`)}/>
+                      <img src= {require(`./../img/${work.id}.png `) }alt={work.id}/>
                   </div>
                   <h2> <Link to={'/project/'+work.id}>{work.nombre}</Link> </h2>
                   <p>{work.description}</p>
