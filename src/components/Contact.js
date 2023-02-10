@@ -12,7 +12,7 @@ export const Contact = () => {
   const handleSubmit = async(event) => {
     event.preventDefault();
     try {
-          await fetch(`${process.env.URL_HOST}/send-email`, 
+          await fetch(`${process.env.API_URL}/send-email`, 
       {
         method: "POST", 
         body:JSON.stringify(formData),   
