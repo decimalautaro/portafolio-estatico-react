@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ export const Contact = () => {
         body:JSON.stringify(formData),   
         headers: {"Content-type": "application/json; charset=UTF-8"} 
        });
-      
+       window.location.href = '/success';
     } catch (error) {
       console.log(error)
       
@@ -44,7 +45,9 @@ export const Contact = () => {
       <input type="number" name="phone" placeholder='Telefono' value={formData.phone} onChange={handleChange} />
       <input type="email" name="email" placeholder='Email'value={formData.email} onChange={handleChange} />
       <textarea name="message" placeholder='Ingrese el mensaje' value={formData.message} onChange={handleChange} />
-      <button type="submit">Submit</button>
+      <button type="submit"><Link type="submit" to="/success" onClick={handleSubmit}>Enviar</Link></button> 
+      
+
     </form>
     </div>
   )}

@@ -8,6 +8,8 @@ import {Contact} from "../components/Contact"
 import { HeaderNav } from '../components/layout/HeaderNav'
 import { Footer } from '../components/layout/Footer'
 import { Project } from '../components/Project'
+import { Success } from '../components/layout/Success'
+
 
 export const MyRoutes = () => {
   return (
@@ -25,6 +27,8 @@ export const MyRoutes = () => {
         <Route path='/curriculum' element= {<Curriculum/>}/>
         <Route path='/contact' element= {<Contact/>}/>
         <Route path='/project/:id' element= {<Project/>}/>
+        <Route path='/success' element= {<Success/>}/>
+
         <Route path='*' element= {
         <div className='page'>
             <h1 className='heading'>Error 404</h1>
