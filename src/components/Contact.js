@@ -12,7 +12,7 @@ export const Contact = () => {
   const handleSubmit = async(event) => {
     event.preventDefault();
     try {
-          await fetch(`${process.env.API_URL}/send-email`, 
+          await fetch(`http://nodemailer-send-email-production.up.railway.app/send-email`, 
       {
         method: "POST", 
         body:JSON.stringify(formData),   
